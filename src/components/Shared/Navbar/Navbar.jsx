@@ -23,8 +23,8 @@ const Navbar = () => {
   return (
     <>
     <div className=" bg-bg-primary">
-        <div className="flex justify-between h-9 items-center text-sm text-white container mx-auto px-6 lg:px-8">
-            <div className="flex items-center space-x-3">
+        <div className="flex justify-center lg:justify-between h-9 items-center text-sm text-white container mx-auto px-6 lg:px-8">
+            <div className="hidden lg:flex items-center space-x-3">
                 <h2>USD+</h2>
                 <h2>English+</h2>
             </div>
@@ -101,7 +101,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-3">
-            <Link to="/cart" className="bg-bg-primary rounded-full p-3 hover:bg-bg-secondary duration-300 text-white"><FaCartShopping /></Link>
+            <Link to="/cart" className="bg-bg-primary hidden md:flex rounded-full p-3 hover:bg-bg-secondary duration-300 text-white"><FaCartShopping /></Link>
           <Link
             to="/login"
             className="bg-bg-primary py-2 hover:bg-bg-secondary duration-300 text-white px-6  font-bold rounded"
